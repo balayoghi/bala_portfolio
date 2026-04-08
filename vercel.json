@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "name": "bala-portfolio",
+  "builds": [
+    {
+      "src": "port.html",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "port.html"
+    }
+  ],
+  "env": {
+    "VERCEL_ENV": "production"
+  },
+  "public": true
+}
